@@ -1,0 +1,117 @@
+.half {
+    max-width: 50%;
+}
+
+.bg-main {
+    background-color: #e8a9af;
+}
+
+.gray-text {
+    color: #495057;
+}
+
+.gallery {
+    background: linear-gradient(45deg, #92baac 45px, transparent 45px)64px 64px,
+    linear-gradient(45deg, #92baac 45px, transparent 45px, transparent 91px, #e1ebbd 91px, #e1ebbd 135px, transparent 135px),
+    linear-gradient(-45deg, #92baac 23px, transparent 23px, transparent 68px, #92baac 68px, #92baac 113px, transparent 113px, transparent 158px, #92baac 158px);
+    background-color: #e1ebbd;
+    background-size: 128px 128px;
+}
+
+.custom-border {
+    border-left: 3px solid #8181827d!important;
+}
+
+.limit-size {
+    max-height: 500px;
+    width: : auto;
+}
+
+.popover {
+    max-width: fit-content !important;
+}
+
+.link {
+    color: #007bff !important;
+    /*text-decoration: none !important;*/
+}
+
+.link:hover {
+    text-decoration: underline !important;
+}
+
+.title {
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+    background-color: #e8a9af85;
+}
+
+.custom-title {
+    font-size: 22px;
+    padding: 5px;
+    text-align: center;
+    background-color: #e9ecefbf;
+}
+
+@font-face {
+    font-family: 'Bumble Bee';
+    src: url('bumblebee-webfont.eot');
+    src: local('☺'),
+    url('bumblebee-webfont.woff') format('woff'),
+    url('bumblebee-webfont.ttf') format('truetype'),
+    url('bumblebee-webfont.svg#webfontg8dbVmxj') format('svg');
+}
+
+@font-face {
+    font-family: 'GestaReFogular';
+    src: url('gestareg-webfont.eot');
+    src: local('☺'),
+    url('gestareg-webfont.woff') format('woff'),
+    url('gestareg-webfont.ttf') format('truetype'),
+    url('gestareg-webfont.svg#webfontg8dbVmxj') format('svg');
+}
+
+@font-face {
+    font-family: 'TropicalAsianDEMO';
+    src: local('☺'),
+    url('../fonts/Sweet Sensations Personal Use.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'FranklinGothic';
+    src: local('☺'),
+    url('../fonts/FranklinGothic.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lato-Regular';
+    src: local('☺'),
+    url('../fonts/Lato-Regular.ttf') format('truetype');
+}
+
+.my_name {
+    font-size: 100px;
+    font-family: 'TropicalAsianDEMO', Arial, Helvetica, sans-serif;
+}
+
+body {
+    font-family: 'GestaRegular', Arial, Helvetica, sans-serif;
+}
+
+h2 {
+    font-family: "Lato-Regular", "Times New Roman", Georgia, sans-serif;
+}
+
+h3 {
+    /*font-weight: bold;*/
+    font-family: "Lato-Regular", "Times New Roman", Georgia, sans-serif;
+}
+
+h5 {
+    font-family: "Lato-Regular", "Times New Roman", Georgia, sans-serif;
+}
+
+. @media (min-width: 1200px) .container {
+    max-width: 1200px;
+}
