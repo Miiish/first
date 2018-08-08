@@ -1,10 +1,11 @@
   // Initialize Firebase
+
   var config = {
       apiKey: "AIzaSyBoiit8uk1503ug0iGuT68bUwjyRh9wqks",
       authDomain: "my-mail-248d9.firebaseapp.com",
       databaseURL: "https://my-mail-248d9.firebaseio.com",
       projectId: "my-mail-248d9",
-      storageBucket: "clients",
+      storageBucket: "",
       messagingSenderId: "1015844241850"
   };
   firebase.initializeApp(config);
@@ -47,33 +48,41 @@
       };
   }
 
-  function getGeo() {
+  function getGeo(f) {
       var geo;
-      if (navigator.geolocation) {
-          navigator.geolocation.watchPosition(showPosition);
-      } else {
-          geo = "Not support geolocation api";
-      }
-      function showPosition(position) {
-          geo = {
-            Latitude: position.coords.latitude,
-            Longitude: position.coords.longitude,
+      $.ajax({
+          url: "https://geoip-db.com/jsonp",
+          jsonpCallback: "callback",
+          dataType: "jsonp",
+          async: false,
+          success: function(location) {
+              f(location)
           }
-      }
+      });
   }
 
   // Usage
-  getUserIP(function(ip) {
+  getGeo(function(location) {
       var time = new Date()
-      console.log(time)
-      firebase.database().ref('clients/'+time).set({
-          time: time,
-          ip: ip,
+      console.log(location)
+      firebase.database().ref('clients/' + time).set({
+          'time': time,
+          'location': location,
       }, function(error) {
-          if (error) {
-              console.log(error)
-          } else {
-              // Data saved successfully!
-          }
+          console.log(error)
       });
   });
+
+  function send_msg(obj) {
+      var time = new Date()
+      firebase.database().ref('messages/' + time).set({
+          'time': time,
+          'obj': obj,
+      }, function(error) {
+          console.log(error)
+      });
+  };
+
+  //   $("#send_msg").click(function() {
+  //     console.log('click')
+  // });

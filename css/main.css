@@ -2,6 +2,11 @@
     max-width: 50%;
 }
 
+/*.accordion {
+    margin: auto;
+    width: 90%;
+}*/
+
 .bg-main {
     background-color: #e8a9af;
 }
@@ -20,7 +25,7 @@
 }
 
 .custom-border {
-    border-left: 3px solid #8181827d!important;
+    border-left: 3px solid #818182 !important;
 }
 
 .limit-size {
@@ -45,14 +50,14 @@
     font-size: 22px;
     padding: 5px;
     text-align: center;
-    background-color: #e8a9af85;
+    background-color: #f4c9cd;
 }
 
 .custom-title {
     font-size: 22px;
     padding: 5px;
     text-align: center;
-    background-color: #e9ecefbf;
+    background-color: rgba(230, 230, 230, 0.93);
 }
 
 .ch {
