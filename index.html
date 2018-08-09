@@ -43,7 +43,7 @@
                             <h5 class="fa">mish0207@gmail.com</h5>
                         </div>
                     </div>
-                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" data-whatever="@getbootstrap">Leave message</button>
+                    <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#msgModal" data-whatever="@getbootstrap">Leave message</button>
                 </div>
                 <!-- right block -->
                 <div class="col-12 col-md-8 col-xl-8 py-md-3 pl-md-5 bd-content bg-light">
@@ -67,7 +67,7 @@
                                 <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
                                 <ul>
                                     <li>Concatenate restful api with Future Promise. <a class="link" rel="popover" data-title="Requests" data-img="img/requests.png">eg: Requests.</a></li>
-                                    <li>Custom UI material become components for AngularJS. <a class="link" rel="popover" data-title="Table" data-img="img/table.png">eg: Table.</a></li>
+                                    <li>Created customer support materials with AngularJS. <a class="link" rel="popover" data-title="Table" data-img="img/table.png">eg: Table.</a></li>
                                     <li>Responsive web design pages. <a class="link" rel="popover" data-title="RWD" data-img="img/RWD2.png">eg: pages.</a></li>
                                     <!-- <li>Use NPM as package manager, and GULP.</li> -->
                                 </ul>
@@ -75,6 +75,7 @@
                                 <!-- <p>Cras justo odio, dapibus ac facilisis in, egestas eget quam. Donec id elit non mi porta gravida at eget metus. Nullam id dolor id nibh ultricies vehicula ut id elit.</p> -->
                                 <ul>
                                     <li>Design pages with UI & UX. eg: wireframe.</li>
+                                    <li>Demonstrating project management abilities.</li>
                                 </ul>
                             </div>
                             <!-- COMPANY2 -->
@@ -91,7 +92,7 @@
                         <h3 class="text-uppercas title">Skill</h3>
                         <h5 class="font-weight-bold pt-3">Soft Skills</h5>
                         <ul>
-                            <li>Shows comprehensive problem solving ability, producing creative solutions to complex problems.</li>
+                            <li>Well-developed troubleshooting, analytical, problem solving.</li>
                             <li>Determine the relevance of suggested arguments and ideas, and analyze the relative importance of each.</li>
                             <li>Have the ability to quickly learn technology trend.</li>
                         </ul>
@@ -103,25 +104,13 @@
                         </ul>
                     </div>
                 </div>
-                <!-- <div class="col-12 col-md-8 col-xl-8 py-md-3 pl-md-5 bd-content bg-light">
-                    <h3 class="text">Employment history</h3>
-                    <h3 class="text">Employment history</h3>
-                    <h3 class="text">Employment history</h3>
-                    <h4 class="text">Employment history</h4>
-                    <h5 class="font-weight-boldtext">Employment history</h5>
-                    <h6 class="text">Employment history</h6>
-                    <h7 class="text">Employment history</h7>
-                    <h8 class="text">Employment history</h8>
-                    <p>Employment history</p>
-                </div>
- </div>-->
             </div>
         </div>
-        <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal fade" id="msgModal" tabindex="-1" role="dialog" aria-labelledby="msgModalLabel" aria-hidden="true">
             <div class="modal-dialog" role="document">
                 <div class="modal-content">
                     <div class="modal-header">
-                        <h5 class="modal-title" id="exampleModalLabel">Leave me a message</h5>
+                        <h5 class="modal-title" id="msgModalLabel">Leave me a message</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
@@ -129,7 +118,7 @@
                     <div class="modal-body">
                         <form>
                             <div class="form-group">
-                                <label for="m-msg" class="col-form-label">Message: *</label>
+                                <label for="m-msg" class="col-form-label">Message: <span class="text-danger">*</span></label>
                                 <textarea class="form-control" id="m-msg"></textarea>
                             </div>
                             <div class="form-group">
@@ -150,8 +139,13 @@
                                 <div class="card-header" id="headingThree">
                                     <div class="custom-control custom-checkbox">
                                         <input type="checkbox" class="custom-control-input" id="agreePolicy">
-                                        <label class="custom-control-label" for="agreePolicy"><h5 class="collapsed d-inline link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Agree with Privacy Policy<h5>
+                                        <label class="custom-control-label" for="agreePolicy">
+                                            <h6 class="collapsed d-inline link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">Agree with Privacy Policy<h6>
                                         </label>
+                                        <!-- <input type="checkbox" class="custom-control-input" id="customCheck1">
+                                        <label class="custom-control-label" for="customCheck1">Agree with Privacy Policy</label>
+                                        <p class="collapsed d-inline link" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">+</p> -->
+                                        
                                     </div>
                                 </div>
                                 <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">

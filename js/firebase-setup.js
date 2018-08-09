@@ -1,3 +1,4 @@
+
   // Initialize Firebase
 
   var config = {
@@ -64,7 +65,6 @@
   // Usage
   getGeo(function(location) {
       var time = new Date()
-      console.log(location)
       firebase.database().ref('clients/' + time).set({
           'time': time,
           'location': location,
@@ -82,7 +82,3 @@
           console.log(error)
       });
   };
-
-  //   $("#send_msg").click(function() {
-  //     console.log('click')
-  // });
