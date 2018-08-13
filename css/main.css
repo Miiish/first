@@ -72,7 +72,7 @@
     font-family: cursive;
 }
 
-ul {
+ul .body-content {
     font-size: 18px;
 }
 
@@ -117,7 +117,7 @@ ul {
     font-family: 'TropicalAsianDEMO', Arial, Helvetica, sans-serif;
 }
 
-body {
+body p {
     font-family: 'GestaRegular', Arial, Helvetica, sans-serif;
 }
 
