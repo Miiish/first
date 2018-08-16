@@ -9,7 +9,7 @@ $(function() {
             placement: 'auto',
             // positionFixed: 'true',
             // preventOverflow: { enabled: false}, hide: { enabled: false},
-            content: function() { return '<img class="limit-size" src="" + $(this).data("img") + "" />'; }
+            content: function() { return '<img class="limit-size" src="'+$(this).data('img') + '" />'; }
         })
         .on('mouseenter', function() {
             var _this = this;
