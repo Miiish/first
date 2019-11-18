@@ -1,3 +1,7 @@
+ul, p {
+    font-size: 19px;
+}
+
 .half {
     max-width: 50%;
 }
@@ -21,6 +25,7 @@
 
 .gray-text {
     color: #495057;
+    font-size: 22px;
 }
 
 .gallery {
@@ -55,25 +60,29 @@
 }
 
 .title {
-    font-size: 22px;
+    font-size: 23px;
     padding: 5px;
     text-align: center;
     background-color: #f4c9cd;
 }
 
 .custom-title {
-    font-size: 22px;
+    font-size: 23px;
     padding: 5px;
     text-align: center;
     background-color: rgba(230, 230, 230, 0.93);
+}
+
+.modal-title {
+    /*font-size: */
 }
 
 .ch {
     font-family: cursive;
 }
 
-ul .body-content {
-    font-size: 18px;
+.normal-text {
+    font-size: 22px;
 }
 
 @font-face {
